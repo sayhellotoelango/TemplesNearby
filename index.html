@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intern Task</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg6vvTljKttVNRuWv_qaHQ2UBqnfLhwlk&libraries=places&callback=initAutocomplete" async defer></script>
+  <script src="search.js"></script>
+  <script src="PapaParse/papaparse.js"></script>
+</head>
+<body>
+  <div id="dummy">
+  <input type="file" id="csv-file" name="files"/>
+  <p><b>First, Upoad your CSV file here to see nearby temples - 10 Km Radius</b></p>
+  </div>
+  <input id="pac-input" style="display:none" class="controls" type="text" placeholder="Type and Click Enter to Search">
+  <div id=LatLongControl style="display:none">
+      <Input id="lat" class="box" type="number" placeholder="Latitude"><br/>
+      <Input id="long" class="box" type="number" placeholder="Longitude"><br/>
+      <button id="search" class="box" type="button">Search</button>
+  </div>
+  <div id="map" style="display:none">></div>
+
+</body>
+</html>
